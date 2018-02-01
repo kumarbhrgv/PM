@@ -1,0 +1,117 @@
+Task 0 :
+
+Stats of passanger class in titanic
+crew    885
+3rd     706
+1st     325
+2nd     285
+Name: Class, dtype: int64
+Stats of passanger's Age in titanic
+adult    2092
+child     109
+Name: Age, dtype: int64
+Stats of passanger Gender in titanic
+male      1731
+female     470
+Name: Gender, dtype: int64
+Stats of passanger survival in titanic
+no     1490
+yes     711
+Name: Outcome, dtype: int64
+
+
+############ Joint Probability ############
+
+
+(0, 0, 'adult', 'male', 'yes') 0.025897319400272602
+(0, 0, 'adult', 'male', 'no') 0.05361199454793276
+(0, 0, 'adult', 'female', 'yes') 0.06360745115856428
+(0, 0, 'adult', 'female', 'no') 0.001817355747387551
+(0, 0, 'child', 'male', 'yes') 0.002271694684234439
+(0, 0, 'child', 'female', 'yes') 0.00045433893684688776
+(0, 1, 'adult', 'male', 'yes') 0.006360745115856429
+(0, 1, 'adult', 'male', 'no') 0.06996819627442072
+(0, 1, 'adult', 'female', 'yes') 0.03634711494775102
+(0, 1, 'adult', 'female', 'no') 0.005906406179009541
+(0, 1, 'child', 'male', 'yes') 0.004997728305315766
+(0, 1, 'child', 'female', 'yes') 0.005906406179009541
+(1, 0, 'adult', 'male', 'yes') 0.034075420263516586
+(1, 0, 'adult', 'male', 'no') 0.17582916855974556
+(1, 0, 'adult', 'female', 'yes') 0.03452975920036347
+(1, 0, 'adult', 'female', 'no') 0.040436165379373015
+(1, 0, 'child', 'male', 'yes') 0.005906406179009541
+(1, 0, 'child', 'male', 'no') 0.01590186278964107
+(1, 0, 'child', 'female', 'yes') 0.006360745115856429
+(1, 0, 'child', 'female', 'no') 0.007723761926397092
+(1, 1, 'adult', 'male', 'yes') 0.08723307587460245
+(1, 1, 'adult', 'male', 'no') 0.3044070876874148
+(1, 1, 'adult', 'female', 'yes') 0.009086778736937756
+(1, 1, 'adult', 'female', 'no') 0.0013630168105406633
+
+
+Task 1:
+
+
+Gender    female                male
+Age        adult     child     adult     child
+Class
+1st     0.027778  0.000000  0.674286  0.000000
+2nd     0.139785  0.000000  0.916667  0.000000
+3rd     0.539394  0.548387  0.837662  0.729167
+crew    0.130435       NaN  0.777262       NaN
+Gender|    female |     male     |
+----------------------------------
+Age| adult| child |adult | child |
+----------------------------------
+1st |  Survival   | Survival   | Death  | Survival   |
+2nd |  Survival   | Survival   | Death  | Survival   |
+3rd |  Death  | Death  | Death  | Death  |
+crew |  Survival   | undefined | Death  | undefined |
+
+
+Task 2:
+
+Class  Outcome
+1st    no         0.081879
+2nd    no         0.112081
+3rd    no         0.354362
+crew   no         0.451678
+Name: Outcome, dtype: float64
+Age    Outcome
+adult  no         0.965101
+child  no         0.034899
+Name: Outcome, dtype: float64
+Gender  Outcome
+female  no         0.084564
+male    no         0.915436
+Name: Outcome, dtype: float64
+Class  Outcome
+1st    yes        0.285513
+2nd    yes        0.165963
+3rd    yes        0.250352
+crew   yes        0.298172
+Name: Outcome, dtype: float64
+Age    Outcome
+adult  yes        0.919831
+child  yes        0.080169
+Name: Outcome, dtype: float64
+Gender  Outcome
+female  yes        0.483826
+male    yes        0.516174
+
+
+Gender       	female                    				male
+Age      adult      		child          		adult   			child
+-------------------------------------------------------------------------------
+1st    0.0992700624909     0.0437273138056     0.527924239304    0.316934542432
+2nd    0.206055613808     0.0972135395501     0.724782003544    0.522135194983
+3rd     0.352318431243     0.184136083355     0.846617081228    0.696059298936
+crew    0.367950929943     0.194547766253    0.855221720696    0.710219133754
+
+Gender       female                    male
+Age      adult      child          adult   child
+--------------------------------------------------
+1st    survival     survival     death    survival
+2nd    survival     survival     death    Survival
+3rd     survival    survival     death    death
+crew    survival    survival    death    death
