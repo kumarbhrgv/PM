@@ -1,4 +1,6 @@
-# probabilistic-models : http://www.cs.colorado.edu/~mozer/Teaching/syllabi/ProbabilisticModelsSpring2018/
+# probabilistic-models
+
+Course website http://www.cs.colorado.edu/~mozer/Teaching/syllabi/ProbabilisticModelsSpring2018/
 
 Assignments for probabilistic models : 5822 
 
